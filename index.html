@@ -32,13 +32,8 @@
             <label for="valor">Valor:*</label>
             <input type="text" class="campo-valor" name="valor">
 
-            <select name="select">
-              <option value="valor1">1</option>
-              <option value="valor2">2</option>
-              <option value="valor3">3</option>
-              <option value="valor4">4</option>
-              <option value="valor5">5</option>
-            </select>
+            <label for="pessoas">Quantidade de pessoas:*</label>
+            <input type="number" class="campo" name="pessoas">
 
             <input type="submit" class="botao-buscar-imovel" value="Buscar imóvel">
           </div>
@@ -99,17 +94,17 @@
         <div class="icones-duvida">
           <div class="descricao-icones">
             <img alt="Icone casa" src="assets/img/icone-casa.png">
-            <p>F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.</p>
+            <p>F4Life é uma empresa de aluguéis de repúblicas para <strong>pessoas universitárias.</strong></p>
           </div>
 
           <div class="descricao-icones">
             <img alt="Icone formando" src="assets/img/icone-formando.png">
-            <p>Maior agilidade e menos preocupação para você que está na faculdade.</p>
+            <p>Maior <strong>agilidade e menos preocupação</strong> para você que está na faculdade.</p>
           </div>
 
           <div class="descricao-icone">
             <img alt="Icone rapidez" src="assets/img/icone-rapidez.png">
-            <p>Menos burocracia e mais agilidade.</p>
+            <p>Menos burocracia e <strong>mais facilidade.</strong></p>
           </div>
         </div>
       </section>
@@ -118,10 +113,10 @@
         <div class="formulario">
           <form action="">
             <label for="email">E-mail:*</label>
-            <input type="text" name="email">
+            <input type="text" name="email" placeholder="Ex.: nome@dominio.com" required>
 
             <label for="mensagem">Mensagem:*</label>
-            <input type="text" name="mensagem">
+            <input type="text" name="mensagem" placeholder="Digite sua mensagem aqui" required>
             
             <input type="submit" value="Enviar">
           </form>
