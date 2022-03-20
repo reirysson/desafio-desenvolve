@@ -1,23 +1,149 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="F4Life - Moradias universitárias, aqui você irá encontrar o conforto que você precisa!">
     <title>F4Life</title>
   </head>
   <body>
-
-    <header>
-
+    <header class="cabecalho">
+      <a href="index.html">
+        <img alt="Logo F4Life" src="assets/img/logo-empresa.png">
+      </a>
+      <nav>
+        <a>Quem Somos</a>
+        <a>Fale Conosco</a>
+      </nav>
     </header>
 
     <main>
+      <section id="inicio">
+        <div class="buscar-imovel">
+          <div class="painel-buscar-imovel">
+            <h2>Encontre o apartamento ideal para seu conforto</h2>
+            <label for="cidade">Cidade:*</label>
+            <input type="text" class="campo-cidade" name="cidade">
 
+            <label for="bairro">Bairro:*</label>
+            <input type="text" class="campo-bairro" name="bairro">
+
+            <label for="valor">Valor:*</label>
+            <input type="text" class="campo-valor" name="valor">
+
+            <select name="select">
+              <option value="valor1">1</option>
+              <option value="valor2">2</option>
+              <option value="valor3">3</option>
+              <option value="valor4">4</option>
+              <option value="valor5">5</option>
+            </select>
+
+            <input type="submit" class="botao-buscar-imovel" value="Buscar imóvel">
+          </div>
+        </div>
+        <div class="universitarios">
+          <img alt="Logo universitários" src="assets/img/logo-buscar-imovel.png">
+        </div>
+      </section>
+
+      <section id="apartamentos-destaques">
+        <h2>Apartamentos destaques</h2>
+
+          <div class="apartamento1">
+            <div class="apartamento-quadrado-fora">
+              <img alt="Foto apartamento 1" src="assets/img/imagem-apartamento1.svg">
+              <div class="detalhes-apartamento">
+                <p>410m - 4 Quartos - 2 Vagas</p>
+                <p>Natal - RN</p>
+              </div>
+              <div class="valor-apartamento">
+                <p>Valor: R$800,00</p>
+              </div>
+              <img alt="Icone estrela" src="assets/img/icone-estrela.png">
+            </div>
+          </div>
+  
+          <div class="apartamento2">
+            <div class="apartamento-quadrado-fora">
+              <img alt="Foto apartamento 2" src="assets/img/imagem-apartamento2.svg">
+              <div class="detalhes-apartamento">
+                <p>480m - 1 Quarto - 1 Vaga</p>
+                <p>Fortaleza - CE</p>
+              </div>
+              <div class="valor-apartamento">
+                <p>Valor:R$1.200,00</p>
+              </div>
+              <img alt="Icone estrela" src="assets/img/icone-estrela.png">
+            </div>
+          </div>
+  
+          <div class="apartamento3">
+            <div class="apartamento-quadrado-fora">
+              <img alt="Foto apartamento 3" src="assets/img/imagem-apartamento3.svg">
+              <div class="detalhes-apartamento">
+                <p>450m - 2 Quartos - 1 Vaga</p>
+                <p>Valor:R$900,00</p>
+              </div>
+              <img alt="Icone estrela" src="assets/img/icone-estrela.png">
+            </div>
+          </div>
+      </section>
+
+      <section id="quem-somos">
+        <div class="duvida">
+          <img alt="Foto de duvida" src="assets/img/logo-quem-somos.png">
+        </div>
+
+        <div class="icones-duvida">
+          <div class="descricao-icones">
+            <img alt="Icone casa" src="assets/img/icone-casa.png">
+            <p>F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.</p>
+          </div>
+
+          <div class="descricao-icones">
+            <img alt="Icone formando" src="assets/img/icone-formando.png">
+            <p>Maior agilidade e menos preocupação para você que está na faculdade.</p>
+          </div>
+
+          <div class="descricao-icone">
+            <img alt="Icone rapidez" src="assets/img/icone-rapidez.png">
+            <p>Menos burocracia e mais agilidade.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="fale-conosco">
+        <div class="formulario">
+          <form action="">
+            <label for="email">E-mail:*</label>
+            <input type="text" name="email">
+
+            <label for="mensagem">Mensagem:*</label>
+            <input type="text" name="mensagem">
+            
+            <input type="submit" value="Enviar">
+          </form>
+        </div>
+
+        <div class="falar">
+          <img alt="Logo atendente falando" src="assets/img/logo-fale-conosco.png">
+        </div>
+      </section>
     </main>
-
+    
     <footer>
+      <div class="rodape">
+        <img alt="Logo F4Life" src="assets/img/logo-empresa.png">
 
+        <p>© 2022 F4LIFE - Todos os direitos reservados</p>
+        <div class="icones-rodape">
+          <img alt="Logo do Twitter" src="assets/img/icone-twitter.png">
+          <img alt="Logo do LinkedIn" src="assets/img/icone-linkedin.png">
+          <img alt="Logo do Facebook" src="assets/img/icone-facebook.png">
+        </div>
+      </div>
     </footer>
 
   </body>
