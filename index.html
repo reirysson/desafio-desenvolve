@@ -6,40 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="description" content="F4Life - Moradias universitárias, aqui você irá encontrar o conforto que você precisa!">
     <title>F4Life</title>
+    <link rel="icon" type="imagem/x-icon" href="assets/img/icone-logo-empresa.ico">
   </head>
   <body>
     <header class="cabecalho">
-      <a href="index.html">
-        <img alt="Logo F4Life" src="assets/img/logo-empresa.png">
-      </a>
+      <a href="index.html"><img alt="Logo F4Life" src="assets/img/logo-empresa.png"></a>
       <nav>
         <a>Quem Somos</a>
+        <a>Apartamentos destaques</a>
         <a>Fale Conosco</a>
       </nav>
     </header>
 
     <main>
       <section id="inicio">
+        <h2>Encontre o apartamento ideal para seu conforto</h2>
+        
+        <div class="universitarios">
+          <img alt="Logo universitários" src="assets/img/logo-buscar-imovel.png">
+        </div>
+
         <div class="buscar-imovel">
           <div class="painel-buscar-imovel">
             <h2>Encontre o apartamento ideal para seu conforto</h2>
             <label for="cidade">Cidade:*</label>
-            <input type="text" class="campo-cidade" name="cidade">
+            <input type="text" class="campo-cidade" name="cidade" placeholder="Ex.: Minha cidade">
 
             <label for="bairro">Bairro:*</label>
-            <input type="text" class="campo-bairro" name="bairro">
+            <input type="text" class="campo-bairro" name="bairro" placeholder="Ex.: Meu bairro">
 
             <label for="valor">Valor:*</label>
-            <input type="text" class="campo-valor" name="valor">
+            <span>R$</span>
+            <input type="text" class="campo-valor" name="valor" placeholder="0,00">
 
             <label for="pessoas">Quantidade de pessoas:*</label>
-            <input type="number" class="campo" name="pessoas">
+            <input type="number" min="0" class="campo-pessoas" name="pessoas">
 
             <input type="submit" class="botao-buscar-imovel" value="Buscar imóvel">
           </div>
-        </div>
-        <div class="universitarios">
-          <img alt="Logo universitários" src="assets/img/logo-buscar-imovel.png">
         </div>
       </section>
 
@@ -79,7 +83,10 @@
               <img alt="Foto apartamento 3" src="assets/img/imagem-apartamento3.svg">
               <div class="detalhes-apartamento">
                 <p>450m - 2 Quartos - 1 Vaga</p>
+                <p>Natal - RN</p>
+                <div class="valor-apartamento">
                 <p>Valor:R$900,00</p>
+                </div>
               </div>
               <img alt="Icone estrela" src="assets/img/icone-estrela.png">
             </div>
@@ -87,6 +94,7 @@
       </section>
 
       <section id="quem-somos">
+        <h2>Quem somos?</h2>
         <div class="duvida">
           <img alt="Foto de duvida" src="assets/img/logo-quem-somos.png">
         </div>
@@ -110,6 +118,12 @@
       </section>
       
       <section id="fale-conosco">
+        <h2>Fale Conosco</h2>
+
+        <div class="falar">
+          <img alt="Logo atendente falando" src="assets/img/logo-fale-conosco.png">
+        </div>
+        
         <div class="formulario">
           <form action="">
             <label for="email">E-mail:*</label>
@@ -121,10 +135,6 @@
             <input type="submit" value="Enviar">
           </form>
         </div>
-
-        <div class="falar">
-          <img alt="Logo atendente falando" src="assets/img/logo-fale-conosco.png">
-        </div>
       </section>
     </main>
     
@@ -133,10 +143,11 @@
         <img alt="Logo F4Life" src="assets/img/logo-empresa.png">
 
         <p>© 2022 F4LIFE - Todos os direitos reservados</p>
+
         <div class="icones-rodape">
-          <img alt="Logo do Twitter" src="assets/img/icone-twitter.png">
-          <img alt="Logo do LinkedIn" src="assets/img/icone-linkedin.png">
-          <img alt="Logo do Facebook" src="assets/img/icone-facebook.png">
+          <a href="https://twitter.com/" target="_blank"><img alt="Logo do Twitter" src="assets/img/icone-twitter.png"></a>
+          <a href="https://www.linkedin.com/" target="_blank"><img alt="Logo do LinkedIn" src="assets/img/icone-linkedin.png"></a>
+          <a href="https://www.facebook.com/" target="_blank"><img alt="Logo do Facebook" src="assets/img/icone-facebook.png"></a>
         </div>
       </div>
     </footer>
