@@ -30,6 +30,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 .logo-cabecalho {
@@ -61,11 +63,19 @@ body {
     font-size: 12px;
     font-weight: bold;
     padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 /*main*/ 
 /*secao do inicio*/
+main {
+    padding-top: 100px;
+}
+
 #inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--cor-azul-escuro);
     padding-top: 35px;
     padding-bottom: 15px;
