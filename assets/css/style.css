@@ -67,11 +67,10 @@ body {
 }
 
 /*main*/ 
-/*secao do inicio*/
 main {
     padding-top: 100px;
 }
-
+/*secao do inicio*/
 #inicio {
     display: flex;
     flex-direction: column;
@@ -450,4 +449,39 @@ main {
 
 .icones-internos-rodape {
     padding: 20px;
+}
+
+/*Tela desktop*/
+
+@media (min-width: 768px) {
+    /*header*/
+    .cabecalho {
+        background-color: var(--cor-azul-escuro);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+    }
+
+    .logo-cabecalho {
+        width: 25%;
+    }
+
+    .menu {
+        padding: 40px;
+        font-size: 18px;
+    }
+    /*main*/
+    main {
+        padding-top: 55px;
+    }
+    /*seção do inicio*/
+    /*seção dos apartametnos destaques*/
+    /*seção quem somos*/
+    /*seção fale conosco*/
+    /*footer*/
+    
+    
 }
