@@ -1,0 +1,358 @@
+:root {
+    --cor-azul-escuro: #132235;
+    --cor-azul-neon: #6DDAD3;
+    --cor-branco: #FFF;
+    --cor-preto:  #000000;
+}
+
+/*Tamanhos dos titulos: 20px*/
+/*Tamanhos dos textos: 15px*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*header*/ 
+.cabecalho {
+    background-color: var(--cor-azul-escuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.clique-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-imagem {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    color: var(--cor-branco);
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+/*main*/ 
+/*secao do inicio*/
+#inicio {
+    background-color: var(--cor-azul-escuro);
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+.conteudo-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo-conforto {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--cor-branco);
+}
+
+.universitarios {
+    height: 280px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.titulo-conforto-caixa {
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buscar-imovel {
+    background-color: var(--cor-branco);
+    border: 1.5px solid;
+    border-radius: 10px; 
+    padding-top: 3px;
+    margin: 30px;
+}
+
+.painel-buscar-imovel {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 320px;
+}
+
+.cidade-caixa {
+    font-size: 15px;
+}
+
+.campo-cidade {
+    font-size: 15px;
+    border: 1.5px solid;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bairro-caixa {
+    font-size: 15px;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+.campo-bairro {
+    font-size: 15px;
+    border: 1.5px solid;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.valor-caixa {
+    font-size: 15px;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+.campo-valor {
+    font-size: 15px;
+    border: 1.5px solid;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pessoas-caixa {
+    font-size: 15px;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+.campo-pessoas {
+    font-size: 15px;
+    border: 1.5px solid;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.botao-buscar-imovel {
+    background-color: var(--cor-azul-neon); /* Green */
+    border: none;
+    border-radius: 10px;
+    color: var(--cor-azul-escuro);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 15px;
+}
+/*secao dos apartamentos destaques*/
+#apartamentos-destaques {
+    background-color: var(--cor-branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.apartamentos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.apartamento1 {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+
+.apartamento2 {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+
+.apartamento3 {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+
+.titulo-apartamento {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.apartamento-quadrado-fora {
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.detalhes-apartamento {
+
+}
+
+.valor-apartamento {
+    color: var(--cor-azul-neon);
+}
+/*secao quem somos*/
+#quem-somos{
+    background-color: var(--cor-azul-escuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.titulo-quem-somos {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor-branco);
+}
+
+.duvida {
+    height: 280px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.icones-duvida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descricao-icones {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    align-items: center;
+    font-weight: 500;
+    color: var(--cor-branco);
+}
+/*secao fale conosco*/
+#fale-conosco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.titulo-fale-conosco {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.falar {
+    height: 280px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 200px;
+    width: 300px;
+    background-color: var(--cor-azul-escuro);
+    border: 1.5px solid;
+    border-radius: 10px;
+    color: var(--cor-branco);
+}
+
+.email-caixa {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.campo-email {
+    font-size: 15px;
+    border: 1.5px solid;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mensagem-caixa {
+    font-size: 15px;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+.campo-mensagem {
+    font-size: 15px;
+    border: 1.5px solid;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.botao-enviar {
+    background-color: var(--cor-azul-neon); /* Green */
+    border: none;
+    border-radius: 10px;
+    color: var(--cor-azul-escuro);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 15px;
+}
+/*footer*/ 
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--cor-azul-escuro);
+    padding: 20px;
+}
+
+.logo-corp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 35px 10px 5px;
+}
+
+.texto-corp {
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--cor-branco);
+    padding-top: 40px;
+}
+
+.icones-rodape {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px 20px 5px;
+}
+
+.icones-internos-rodape {
+    padding: 20px;
+}

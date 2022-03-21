@@ -7,58 +7,67 @@
     <meta name="description" content="F4Life - Moradias universitárias, aqui você irá encontrar o conforto que você precisa!">
     <title>F4Life</title>
     <link rel="icon" type="imagem/x-icon" href="assets/img/icone-logo-empresa.ico">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
+
   <body>
-    <header class="cabecalho">
-      <a href="index.html"><img alt="Logo F4Life" src="assets/img/logo-empresa.png"></a>
-      <nav>
-        <a>Quem Somos</a>
-        <a>Apartamentos destaques</a>
-        <a>Fale Conosco</a>
-      </nav>
+    <header>
+      <div class="cabecalho">
+        <div class="logo-cabecalho">
+          <a href="/" class="clique-logo"><img alt="Logo F4Life" class="logo-imagem" src="assets/img/logo-empresa-mobile.png"></a>
+        </div>
+        
+        <nav class="menu">
+            <a href="/">Quem Somos</a>
+            <a href="/">Apartamentos destaques</a>
+            <a href="/">Fale Conosco</a>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section id="inicio">
-        <h2>Encontre o apartamento ideal para seu conforto</h2>
-        
-        <div class="universitarios">
-          <img alt="Logo universitários" src="assets/img/logo-buscar-imovel.png">
+        <div class="conteudo-inicio">
+          <h2 class="titulo-conforto">Encontre o apartamento ideal para seu conforto</h2>
+          <div>
+            <img class="universitarios" alt="Logo universitários" src="assets/img/logo-buscar-imovel.png">
+          </div>
         </div>
-
+  
         <div class="buscar-imovel">
           <div class="painel-buscar-imovel">
-            <h2>Encontre o apartamento ideal para seu conforto</h2>
-            <label for="cidade">Cidade:*</label>
+            <h2 class="titulo-conforto-caixa">Encontre o apartamento ideal para seu conforto</h2>
+
+            <label for="cidade" class="cidade-caixa">Cidade: *</label>
             <input type="text" class="campo-cidade" name="cidade" placeholder="Ex.: Minha cidade">
 
-            <label for="bairro">Bairro:*</label>
+            <label for="bairro" class="bairro-caixa">Bairro: *</label>
             <input type="text" class="campo-bairro" name="bairro" placeholder="Ex.: Meu bairro">
 
-            <label for="valor">Valor:*</label>
-            <span>R$</span>
-            <input type="text" class="campo-valor" name="valor" placeholder="0,00">
+            <label for="valor" class="valor-caixa">Valor: *</label>
+            <input type="text" class="campo-valor" name="valor" placeholder="R$ 0,00">
 
-            <label for="pessoas">Quantidade de pessoas:*</label>
+            <label for="pessoas" class="pessoas-caixa">Quantidade de pessoas: *</label>
             <input type="number" min="0" class="campo-pessoas" name="pessoas">
 
-            <input type="submit" class="botao-buscar-imovel" value="Buscar imóvel">
+            <button type="button" class="botao-buscar-imovel">Buscar imóvel</button>
           </div>
         </div>
       </section>
 
       <section id="apartamentos-destaques">
-        <h2>Apartamentos destaques</h2>
-
+          <h2 class="titulo-apartamento">Apartamentos destaques</h2>
+        <div class="apartamentos">
           <div class="apartamento1">
             <div class="apartamento-quadrado-fora">
-              <img alt="Foto apartamento 1" src="assets/img/imagem-apartamento1.svg">
+              <img alt="Foto apartamento 1" src="assets/img/foto-apartamento1.png">
               <div class="detalhes-apartamento">
                 <p>410m - 4 Quartos - 2 Vagas</p>
                 <p>Natal - RN</p>
               </div>
-              <div class="valor-apartamento">
-                <p>Valor: R$800,00</p>
+              <div>
+                <p>Valor: <strong class="valor-apartamento">R$800,00</strong></p>
               </div>
               <img alt="Icone estrela" src="assets/img/icone-estrela.png">
             </div>
@@ -66,13 +75,13 @@
   
           <div class="apartamento2">
             <div class="apartamento-quadrado-fora">
-              <img alt="Foto apartamento 2" src="assets/img/imagem-apartamento2.svg">
+              <img alt="Foto apartamento 2" src="assets/img/foto-apartamento2.png">
               <div class="detalhes-apartamento">
                 <p>480m - 1 Quarto - 1 Vaga</p>
                 <p>Fortaleza - CE</p>
               </div>
-              <div class="valor-apartamento">
-                <p>Valor:R$1.200,00</p>
+              <div >
+                <p>Valor: <strong class="valor-apartamento">R$1.200,00</strong></p>
               </div>
               <img alt="Icone estrela" src="assets/img/icone-estrela.png">
             </div>
@@ -80,29 +89,30 @@
   
           <div class="apartamento3">
             <div class="apartamento-quadrado-fora">
-              <img alt="Foto apartamento 3" src="assets/img/imagem-apartamento3.svg">
+              <img alt="Foto apartamento 3" src="assets/img/foto-apartamento3.png">
               <div class="detalhes-apartamento">
                 <p>450m - 2 Quartos - 1 Vaga</p>
                 <p>Natal - RN</p>
-                <div class="valor-apartamento">
-                <p>Valor:R$900,00</p>
+                <div>
+                  <p>Valor: <strong class="valor-apartamento">R$900,00</strong></p>
                 </div>
               </div>
               <img alt="Icone estrela" src="assets/img/icone-estrela.png">
             </div>
           </div>
+        </div>
       </section>
 
       <section id="quem-somos">
-        <h2>Quem somos?</h2>
-        <div class="duvida">
-          <img alt="Foto de duvida" src="assets/img/logo-quem-somos.png">
+        <h2 class="titulo-quem-somos">Quem somos?</h2>
+        <div>
+          <img alt="Foto de duvida" class="duvida" src="assets/img/logo-quem-somos.png">
         </div>
 
         <div class="icones-duvida">
           <div class="descricao-icones">
-            <img alt="Icone casa" src="assets/img/icone-casa.png">
-            <p>F4Life é uma empresa de aluguéis de repúblicas para <strong>pessoas universitárias.</strong></p>
+              <img alt="Icone casa" src="assets/img/icone-casa.png">
+              <p>F4Life é uma empresa de aluguéis de repúblicas para <strong>pessoas universitárias.</strong></p>
           </div>
 
           <div class="descricao-icones">
@@ -110,7 +120,7 @@
             <p>Maior <strong>agilidade e menos preocupação</strong> para você que está na faculdade.</p>
           </div>
 
-          <div class="descricao-icone">
+          <div class="descricao-icones">
             <img alt="Icone rapidez" src="assets/img/icone-rapidez.png">
             <p>Menos burocracia e <strong>mais facilidade.</strong></p>
           </div>
@@ -118,39 +128,39 @@
       </section>
       
       <section id="fale-conosco">
-        <h2>Fale Conosco</h2>
+        <h2 class="titulo-fale-conosco">Fale Conosco</h2>
 
-        <div class="falar">
-          <img alt="Logo atendente falando" src="assets/img/logo-fale-conosco.png">
+        <div>
+          <img alt="Logo atendente falando" class="falar" src="assets/img/logo-fale-conosco.png">
         </div>
-        
-        <div class="formulario">
-          <form action="">
-            <label for="email">E-mail:*</label>
-            <input type="text" name="email" placeholder="Ex.: nome@dominio.com" required>
 
-            <label for="mensagem">Mensagem:*</label>
-            <input type="text" name="mensagem" placeholder="Digite sua mensagem aqui" required>
+        <div>
+          <form action="" class="formulario">
+            <label for="email" class="email-caixa">E-mail:*</label>
+            <input type="text" class="campo-email" name="email" placeholder="Ex.: nome@dominio.com" required>
+
+            <label for="mensagem" class="mensagem-caixa">Mensagem:*</label>
+            <input type="text" class="campo-mensagem" name="mensagem" placeholder="Digite sua mensagem aqui" required>
             
-            <input type="submit" value="Enviar">
+            <input class="botao-enviar" type="submit" value="Enviar">
           </form>
         </div>
       </section>
     </main>
-    
+
     <footer>
       <div class="rodape">
-        <img alt="Logo F4Life" src="assets/img/logo-empresa.png">
-
-        <p>© 2022 F4LIFE - Todos os direitos reservados</p>
-
+        <div class="logo-corp">
+          <img alt="Logo F4Life" class="logo-imagem" src="assets/img/logo-empresa-mobile.png">
+          <p class="texto-corp">© 2022 F4LIFE - Todos os direitos reservados</p>
+        </div>
+      
         <div class="icones-rodape">
-          <a href="https://twitter.com/" target="_blank"><img alt="Logo do Twitter" src="assets/img/icone-twitter.png"></a>
-          <a href="https://www.linkedin.com/" target="_blank"><img alt="Logo do LinkedIn" src="assets/img/icone-linkedin.png"></a>
-          <a href="https://www.facebook.com/" target="_blank"><img alt="Logo do Facebook" src="assets/img/icone-facebook.png"></a>
+          <a href="https://twitter.com/" class="icones-internos-rodape" target="_blank"><img alt="Logo do Twitter" src="assets/img/icone-twitter.png"></a>
+          <a href="https://www.linkedin.com/" class="icones-internos-rodape" target="_blank"><img alt="Logo do LinkedIn" src="assets/img/icone-linkedin.png"></a>
+          <a href="https://www.facebook.com/" class="icones-internos-rodape" target="_blank"><img alt="Logo do Facebook" src="assets/img/icone-facebook.png"></a>
         </div>
       </div>
     </footer>
-
   </body>
 </html>
