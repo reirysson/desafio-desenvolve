@@ -59,6 +59,7 @@
       <section id="apartamentos-destaques">
           <h2 class="titulo-apartamento">Apartamentos destaques</h2>
         <div class="apartamentos">
+
           <div class="apartamento1 centralizar" >
 
             <div class="apartamento-quadrado-fora">
@@ -83,6 +84,7 @@
                   </div>  
             </div>
           </div>
+
           <div class="apartamento2 centralizar">
 
             <div class="apartamento-quadrado-fora">
@@ -106,7 +108,7 @@
                   </div>
             </div>
           </div>
-  
+
           <div class="apartamento3 centralizar">
 
             <div class="apartamento-quadrado-fora">
@@ -135,27 +137,31 @@
       </section>
 
       <section id="quem-somos">
-        <h2 class="titulo-quem-somos">Quem somos?</h2>
-        <div>
-          <img alt="Foto de duvida" class="duvida" src="assets/img/logo-quem-somos.png">
-        </div>
 
-          <div class="icones-duvida">
-            <div class="descricao-icones">
-                <img alt="Icone casa" src="assets/img/icone-casa.png">
-                <p>F4Life é uma empresa de aluguéis de repúblicas para <strong>pessoas universitárias.</strong></p>
-            </div>
-  
-            <div class="descricao-icones">
-              <img alt="Icone formando" src="assets/img/icone-formando.png">
-              <p>Maior <strong>agilidade e menos preocupação</strong> para você que está na faculdade.</p>
-            </div>
-  
-            <div class="descricao-icones">
-              <img alt="Icone rapidez" src="assets/img/icone-rapidez.png">
-              <p>Menos burocracia e <strong>mais facilidade.</strong></p>
-            </div>
+        <div class="titulo-imagem">
+          <h2 class="titulo-quem-somos">Quem somos?</h2>
+
+          <div>
+          <img alt="Foto de duvida" class="duvida" src="assets/img/logo-quem-somos.png">
           </div>
+        </div>
+        
+        <div class="icones-duvida">
+            <div class="descricao-icones">
+                <img alt="Icone casa" class="icones-quem-somos tamanho-imagem" src="assets/img/icone-casa.png">
+                <p class="texto-quem-somos">F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.</p>
+            </div>
+  
+            <div class="descricao-icones">
+              <img alt="Icone formando" class="icones-quem-somos tamanho-imagem" src="assets/img/icone-formando.png">
+              <p class="texto-quem-somos">Maior agilidade e menos preocupação para você que está na faculdade.</p>
+            </div>
+  
+            <div class="descricao-icones">
+              <img alt="Icone rapidez" class="icones-quem-somos tamanho-imagem" src="assets/img/icone-rapidez.png">
+              <p class="texto-quem-somos">Menos burocracia e mais facilidade.</p>
+            </div>
+        </div>
       </section>
       
       <section id="fale-conosco">
@@ -171,7 +177,7 @@
             <input type="text" class="campo-email" name="email" placeholder="Ex.: nome@dominio.com" required>
 
             <label for="mensagem" class="mensagem-caixa">Mensagem:*</label>
-            <input type="text" class="campo-mensagem" name="mensagem" placeholder="Digite sua mensagem aqui" required>
+            <textarea name="mensagem" class="campo-mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui" required></textarea>
             
             <input class="botao-enviar" type="submit" value="Enviar">
           </form>

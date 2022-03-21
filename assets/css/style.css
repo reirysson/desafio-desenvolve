@@ -19,6 +19,10 @@ body {
     align-items: center;
 }
 
+.tamanho-imagem {
+    height: 50px;
+}
+
 /*header*/ 
 .cabecalho {
     background-color: var(--cor-azul-escuro);
@@ -279,34 +283,56 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 35px;
+    gap: 30px;
 }
 
 .titulo-quem-somos {
     font-size: 20px;
     font-weight: bold;
     color: var(--cor-branco);
+    padding-top: 35px;
+}
+
+.titulo-imagem {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
 }
 
 .duvida {
     height: 280px;
-    padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .icones-duvida{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    justify-content: left;
+    gap: 55px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .descricao-icones {
     display: flex;
     flex-direction: row;
-    padding: 40px;
     align-items: center;
+    font-size: 12px;
     font-weight: 500;
     color: var(--cor-branco);
+    gap: 13px;
+}
+
+.icone-quem-somos {
+    width: 2px;
+}
+
+.texto-quem-somos {
+    max-width: 236px; 
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
 }
 /*secao fale conosco*/
 #fale-conosco {
@@ -314,6 +340,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .titulo-fale-conosco {
@@ -342,6 +369,7 @@ body {
 .email-caixa {
     font-size: 15px;
     margin-top: 10px;
+    padding-bottom: 5px;
 }
 
 .campo-email {
@@ -354,8 +382,8 @@ body {
 
 .mensagem-caixa {
     font-size: 15px;
-    padding-top: 5px;
-    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .campo-mensagem {
@@ -367,7 +395,7 @@ body {
 }
 
 .botao-enviar {
-    background-color: var(--cor-azul-neon); /* Green */
+    background-color: var(--cor-azul-neon);
     border: none;
     border-radius: 10px;
     color: var(--cor-azul-escuro);
@@ -385,14 +413,14 @@ body {
     flex-direction: row;
     justify-content: center;
     background-color: var(--cor-azul-escuro);
-    padding: 20px;
+    padding-top: 10px;
 }
 
 .logo-corp {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 35px 10px 5px;
+    justify-content: center;
 }
 
 .texto-corp {
@@ -405,7 +433,6 @@ body {
 .icones-rodape {
     display: flex;
     flex-direction: column;
-    padding: 20px 5px 20px 5px;
 }
 
 .icones-internos-rodape {
