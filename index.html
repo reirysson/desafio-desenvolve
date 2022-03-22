@@ -18,9 +18,9 @@
         </div>
         
         <nav class="menu">
-            <a href="#apartamentos-destaques">Apartamentos destaques</a>
-            <a href="#quem-somos">Quem Somos</a>
-            <a href="#fale-conosco">Fale Conosco</a>
+            <a class="texto-menu" href="#apartamentos-destaques">Apartamentos destaques</a>
+            <a class="texto-menu" href="#quem-somos">Quem Somos</a>
+            <a class="texto-menu" href="#fale-conosco">Fale Conosco</a>
         </nav>
       </div>
     </header>
@@ -50,7 +50,7 @@
             <label for="pessoas" class="pessoas-caixa">Quantidade de pessoas: *</label>
             <input type="number" min="0" class="campo-pessoas" name="pessoas">
 
-            <button type="button" class="botao-buscar-imovel">Buscar imóvel</button>
+            <button type="submit" class="botao-buscar-imovel">Buscar imóvel</button>
           </div>
         </div>
       </section>
@@ -136,16 +136,12 @@
       </section>
 
       <section id="quem-somos">
+          <div class="titulo-imagem"><h2 class="titulo-quem-somos">Quem somos?</h2></div>
 
-        <div class="titulo-imagem">
-          <h2 class="titulo-quem-somos">Quem somos?</h2>
+        <div class="quem-somos-desktop">
+          <div><img alt="Foto de duvida" class="duvida" src="assets/img/logo-quem-somos.png"></div>
 
-          <div>
-          <img alt="Foto de duvida" class="duvida" src="assets/img/logo-quem-somos.png">
-          </div>
-        </div>
-        
-        <div class="icones-duvida">
+          <div class="icones-duvida">
             <div class="descricao-icones">
                 <img alt="Icone casa" class="icones-quem-somos tamanho-imagem" src="assets/img/icone-casa.png">
                 <p class="texto-quem-somos">F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.</p>
@@ -160,26 +156,27 @@
               <img alt="Icone rapidez" class="icones-quem-somos tamanho-imagem" src="assets/img/icone-rapidez.png">
               <p class="texto-quem-somos">Menos burocracia e mais facilidade.</p>
             </div>
+          </div>
         </div>
       </section>
       
       <section id="fale-conosco">
         <h2 class="titulo-fale-conosco">Fale Conosco</h2>
 
-        <div>
-          <img alt="Logo atendente falando" class="falar" src="assets/img/logo-fale-conosco.png">
-        </div>
+        <div class="fale-conosco-desktop">
+          <div><img alt="Logo atendente falando" class="falar" src="assets/img/logo-fale-conosco.png"></div>
 
-        <div>
-          <form action="" class="formulario">
-            <label for="email" class="email-caixa">E-mail:*</label>
-            <input type="text" class="campo-email" name="email" placeholder="Ex.: nome@dominio.com" required>
-
-            <label for="mensagem" class="mensagem-caixa">Mensagem:*</label>
-            <textarea name="mensagem" class="campo-mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui" required></textarea>
-            
-            <input class="botao-enviar" type="submit" value="Enviar">
-          </form>
+          <div class="caixa-formulario">
+            <form action="" class="formulario">
+              <label for="email" class="email-caixa">E-mail: *</label>
+              <input type="text" class="campo-email" name="email" placeholder="Ex.: nome@dominio.com" required>
+  
+              <label for="mensagem" class="mensagem-caixa">Mensagem: *</label>
+              <textarea name="mensagem" class="campo-mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui" required></textarea>
+              
+              <input class="botao-enviar" type="submit" value="Enviar">
+            </form>
+          </div>
         </div>
       </section>
     </main>
@@ -187,14 +184,14 @@
     <footer>
       <div class="rodape">
         <div class="logo-corp">
-          <img alt="Logo F4Life" class="logo-imagem" src="assets/img/logo-empresa-mobile.png">
+          <img alt="Logo F4Life" class="logo-imagem-footer" src="assets/img/logo-empresa-mobile.png">
           <p class="texto-corp">© 2022 F4LIFE - Todos os direitos reservados</p>
         </div>
       
-        <div class="icones-rodape">
-          <a href="https://twitter.com/" class="icones-internos-rodape" target="_blank"><img alt="Logo do Twitter" src="assets/img/icone-twitter.png"></a>
-          <a href="https://www.instagram.com" class="icones-internos-rodape" target="_blank"><img alt="Logo do Instagram" src="assets/img/icone-instagram.png"></a>
-          <a href="https://www.facebook.com/" class="icones-internos-rodape" target="_blank"><img alt="Logo do Facebook" src="assets/img/icone-facebook.png"></a>
+        <div class="icones-rodape-caixa">
+          <a href="https://twitter.com/" class="icones-internos-rodape" target="_blank"><img alt="Logo do Twitter" class="icones-rodape" src="assets/img/icone-twitter.png"></a>
+          <a href="https://www.instagram.com" class="icones-internos-rodape" target="_blank"><img alt="Logo do Instagram" class="icones-rodape" src="assets/img/icone-instagram.png"></a>
+          <a href="https://www.facebook.com/" class="icones-internos-rodape" target="_blank"><img alt="Logo do Facebook" class="icones-rodape" src="assets/img/icone-facebook.png"></a>
         </div>
       </div>
     </footer>

@@ -1,6 +1,7 @@
 :root {
     --cor-azul-escuro: #132235;
     --cor-azul-neon: #6DDAD3;
+    --cor-azul-neon-escuro: #56ada8;
     --cor-branco: #FFF;
     --cor-preto:  #000000;
     --cor-cinza: #808080;
@@ -130,6 +131,7 @@ main {
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 5px;
 }
 
 .bairro-caixa {
@@ -144,6 +146,7 @@ main {
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 5px;
 }
 
 .valor-caixa {
@@ -158,6 +161,7 @@ main {
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 5px;
 }
 
 .pessoas-caixa {
@@ -172,6 +176,7 @@ main {
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 5px;
 }
 
 .botao-buscar-imovel {
@@ -186,6 +191,11 @@ main {
     font-weight: bold;
     margin-top: 15px;
     padding: 15px;
+    transition: 0.5s all;
+}
+
+.botao-buscar-imovel:active {
+    transform: scale(1.1);
 }
 /*secao dos apartamentos destaques*/
 #apartamentos-destaques {
@@ -240,7 +250,8 @@ main {
 }
 
 .apartamento-quadrado-fora {
-    border: 1px solid var(--cor-preto);
+    border: 1px transparent var(--cor-cinza);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     width: 95%;
 }
@@ -390,6 +401,15 @@ main {
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.campo-email::placeholder {
+    padding-left: 10px;
+}
+
+.campo-mensagem::placeholder {
+    padding-left: 10px;
 }
 
 .mensagem-caixa {
@@ -404,6 +424,7 @@ main {
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 5px;
 }
 
 .botao-enviar {
@@ -418,6 +439,11 @@ main {
     font-weight: bold;
     margin-top: 15px;
     padding: 15px;
+    transition: 0.5s all;
+}
+
+.botao-enviar:active {
+    transform: scale(1.1);
 }
 /*footer*/ 
 .rodape {
@@ -442,17 +468,16 @@ main {
     padding-top: 40px;
 }
 
-.icones-rodape {
+.icones-rodape-caixa {
     display: flex;
     flex-direction: column;
 }
 
 .icones-internos-rodape {
-    padding: 20px;
+    padding: 20px;  
 }
 
 /*Tela desktop*/
-
 @media (min-width: 768px) {
     /*header*/
     .cabecalho {
@@ -473,15 +498,266 @@ main {
         padding: 40px;
         font-size: 18px;
     }
+
+    .texto-menu {
+        transition: 0.5s all;
+    }
+
+    .texto-menu:hover {
+        color: var(--cor-azul-neon);
+    }
     /*main*/
     main {
-        padding-top: 55px;
+        padding-top: 65px;
     }
     /*seção do inicio*/
-    /*seção dos apartametnos destaques*/
+    #inicio {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .titulo-conforto {
+        display: none;
+    }
+
+    .titulo-conforto-caixa {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .universitarios {
+        height: 460px;
+    }
+
+    .buscar-imovel {
+        display: flex;
+        display: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .painel-buscar-imovel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 400px;
+        width: 420px;
+        gap: 5px;
+    }
+    
+    .cidade-caixa {
+        font-size: 18px;
+        padding-top: 25px;
+    }
+    
+    .campo-cidade {
+        font-size: 18px;
+    }
+    
+    .bairro-caixa {
+        font-size: 18px;
+    }
+    
+    .campo-bairro {
+        font-size: 18px;
+    }
+    
+    .valor-caixa {
+        font-size: 18px;
+    }
+    
+    .campo-valor {
+        font-size: 18px;
+    }
+    
+    .pessoas-caixa {
+        font-size: 18px;
+    }
+    
+    .campo-pessoas {
+        font-size: 18px;
+    }
+
+    .botao-buscar-imovel:hover {
+        background-color: var(--cor-azul-neon-escuro);
+    }
+    /*seção dos apartamentos destaques*/
+    #apartamentos-destaques {
+        background-color: var(--cor-branco);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 80px;
+    }
+
+    .apartamentos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .apartamento1 {
+        padding-top: 0px;
+        transition: 0.5s all;
+    }
+
+    .apartamento1:hover {
+        transform: scale(1.1);
+    }
+
+    .apartamento2 {
+        padding-top: 0px;
+        transition: 0.5s all;
+    }
+
+    .apartamento2:hover {
+        transform: scale(1.1);
+    }
+
+    .apartamento3 {
+        padding-top: 0px;
+        transition: 0.5s all;
+    }
+
+    .apartamento3:hover {
+        transform: scale(1.1);
+    }
+
+    .titulo-apartamento {
+        font-size: 32px;
+        padding-bottom: 50px;
+    }
     /*seção quem somos*/
+    .quem-somos-desktop {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 35px;
+    }
+
+    .titulo-quem-somos {
+        font-size: 32px;
+    }
+
+    .duvida {
+        height: 465px;
+        width: 480px;
+    }
+
+    .icones-duvida {
+        gap: 50px;
+    }
+
+    .descricao-icones {
+        gap: 30px;
+    }
+    
+    .descricao-icones img {
+        height: 50%;
+    }
+
+    .texto-quem-somos {
+        font-size: 18px;
+        line-height: 24px;
+    }
     /*seção fale conosco*/
+    .fale-conosco-desktop {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 35px;
+    }
+
+    .titulo-fale-conosco {
+        font-size: 32px;
+    }
+
+    .falar {
+        height: 410px;
+        width: 520px;
+    }
+
+    .caixa-formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .formulario {
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    .email-caixa {
+        font-size: 18px;
+    }
+    
+    .campo-email {
+        font-size: 18px;
+    }
+    
+    .campo-email::placeholder {
+        padding-left: 10px;
+    }
+    
+    .mensagem-caixa {
+        font-size: 18px;  
+    }
+    
+    .campo-mensagem {
+        font-size: 18px;
+    }
+
+    .botao-enviar {
+        font-size: 18px;
+        transition: 0.5s all;
+    }
+
+    .botao-enviar:hover {
+        background-color: var(--cor-azul-neon-escuro);
+    }
     /*footer*/
-    
-    
+    .rodape {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .logo-corp {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .logo-imagem-footer {
+        width: 25%;
+    }
+
+    .texto-corp {
+        padding-left: 225px;
+    }
+
+    .icones-rodape-caixa {
+        flex-direction: row;
+    }
+
+    .icones-rodape {
+        transition: 0.5s all;
+    }
+
+    .icones-rodape:hover {
+        transform: scale(1.1);
+    }
 }
