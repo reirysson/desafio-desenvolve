@@ -14,6 +14,19 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 8px;              
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--cor-branco);       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-azul-escuro);   
+    border-radius: 20px;       
+  }
+
 .centralizar {
     display: flex;
     flex-direction: column;
@@ -383,7 +396,6 @@ main {
 
 .falar {
     width: 100%;
-  
 }
 
 .formulario {
@@ -413,6 +425,8 @@ main {
 
 .campo-mensagem-fale::placeholder {
     padding-left: 10px;
+    font-family: roboto;
+    font-size: 15px;
 }
 
 .mensagem-caixa {
@@ -445,7 +459,17 @@ main {
     transform: scale(1.1);
 }
 
+.escondido {
+    display: none;
+}
 
+.visivel {
+    display: inline;
+    color: var(--cor-azul-escuro);
+    border: 2px solid var(--cor-azul-neon);
+    border-radius: 10px;
+    padding: 5px 0;
+}
 /*footer*/ 
 .rodape {
     display: flex;

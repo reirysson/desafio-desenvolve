@@ -168,12 +168,13 @@
           <form action="" class="formulario">
             
             <label for="email" class="email-caixa">E-mail: *</label>
-            <input type="text" class="campo-email" name="email" placeholder="Ex.: nome@dominio.com" required>
+            <input id="email" type="text" class="campo-email" name="email" placeholder="Ex.: nome@dominio.com" required>
             
             <label for="mensagem" class="mensagem-caixa">Mensagem: *</label>
-            <textarea name="mensagem" class="campo-mensagem-fale" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui" required></textarea>
-      
-            <input class="botao-enviar" type="submit" value="Enviar">
+            <textarea id="mensagem" name="mensagem" class="campo-mensagem-fale" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui" required></textarea>
+            <p id="msg_alerta"></p>
+            <button class="escondido" id="ok">Ok</button>
+            <input class="botao-enviar" type="submit" value="Enviar" id="botao-enviar">
             
           </form>
         </div>
