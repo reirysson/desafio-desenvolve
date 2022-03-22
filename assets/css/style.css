@@ -9,6 +9,9 @@
 
 /*Tamanhos dos titulos: 20px*/
 /*Tamanhos dos textos: 15px*/
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
