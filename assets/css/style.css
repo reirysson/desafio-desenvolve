@@ -1,7 +1,7 @@
 :root {
     --cor-azul-escuro: #132235;
     --cor-azul-neon: #6DDAD3;
-    --cor-azul-neon-escuro: #56ada8;
+    --cor-azul-neon-escuro: #54ada9;
     --cor-branco: #FFF;
     --cor-preto:  #000000;
     --cor-cinza: #808080;
@@ -362,7 +362,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 35px;
+    justify-content: center;
+    padding: 0 35px;
+    margin-top: 35px;
     padding-bottom: 35px;
 }
 
@@ -371,44 +373,45 @@ main {
     font-weight: bold;
 }
 
+.imagem-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+}
+
 .falar {
-    height: 280px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    width: 100%;
+  
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    height: 200px;
-    width: 300px;
-    background-color: var(--cor-azul-escuro);
-    border: 1.5px solid;
+    width: 100%;
+    background: var(--cor-azul-escuro);
+    border: none;
     border-radius: 10px;
     color: var(--cor-branco);
+    padding: 30px 20px;
 }
 
 .email-caixa {
     font-size: 15px;
-    margin-top: 10px;
-    padding-bottom: 5px;
 }
 
 .campo-email {
     font-size: 15px;
-    border: 1.5px solid;
     border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
+    padding: 10px;
 }
 
 .campo-email::placeholder {
     padding-left: 10px;
 }
 
-.campo-mensagem::placeholder {
+.campo-mensagem-fale::placeholder {
     padding-left: 10px;
 }
 
@@ -418,16 +421,13 @@ main {
     padding-bottom: 5px;
 }
 
-.campo-mensagem {
-    font-size: 15px;
-    border: 1.5px solid;
+.campo-mensagem-fale {
     border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
+    padding: 10px;
 }
 
 .botao-enviar {
+    margin-top: 15px;
     background-color: var(--cor-azul-neon);
     border: none;
     border-radius: 10px;
@@ -437,7 +437,6 @@ main {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    margin-top: 15px;
     padding: 15px;
     transition: 0.5s all;
 }
@@ -445,6 +444,8 @@ main {
 .botao-enviar:active {
     transform: scale(1.1);
 }
+
+
 /*footer*/ 
 .rodape {
     display: flex;
@@ -493,6 +494,7 @@ main {
         align-items: center;
         position: fixed;
         width: 100%;
+        z-index: 5;
     }
 
     .logo-cabecalho {
@@ -510,6 +512,8 @@ main {
 
     .texto-menu:hover {
         color: var(--cor-azul-neon);
+        text-decoration: none;
+        transform: scale(1.05);
     }
     /*main*/
     main {
@@ -673,65 +677,32 @@ main {
         line-height: 24px;
     }
     /*seção fale conosco*/
-    .fale-conosco-desktop {
+
+    #fale-conosco {
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .imagem-form {
         display: flex;
         flex-direction: row-reverse;
         width: 100%;
-        justify-content: space-around;
         align-items: center;
-        padding-bottom: 35px;
+        justify-content: center
     }
-
-    .titulo-fale-conosco {
-        font-size: 32px;
-    }
-
+    
     .falar {
-        height: 410px;
-        width: 520px;
+        width: 45%;
+        padding-right: 100px;
     }
-
-    .caixa-formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
+    
     .formulario {
         display: flex;
-        justify-content: center;
-        padding: 25px;
+        flex-direction: column;
+        width: 40%;
+        margin-left: 100px;
     }
 
-    .email-caixa {
-        font-size: 18px;
-    }
-    
-    .campo-email {
-        font-size: 18px;
-    }
-    
-    .campo-email::placeholder {
-        padding-left: 10px;
-    }
-    
-    .mensagem-caixa {
-        font-size: 18px;  
-    }
-    
-    .campo-mensagem {
-        font-size: 18px;
-    }
-
-    .botao-enviar {
-        font-size: 18px;
-        transition: 0.5s all;
-    }
-
-    .botao-enviar:hover {
-        background-color: var(--cor-azul-neon-escuro);
-    }
     /*footer*/
     .rodape {
         flex-direction: row;
