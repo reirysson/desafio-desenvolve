@@ -704,7 +704,6 @@ main {
         line-height: 24px;
     }
     /*seção fale conosco*/
-
     #fale-conosco {
         width: 100%;
         padding: 0px;
@@ -726,7 +725,7 @@ main {
     .formulario {
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 30%;
         margin-left: 100px;
     }
 

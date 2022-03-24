@@ -1,8 +1,8 @@
-//Declaração do botão
+//Declaração do botão de enviar formulário
 const btn = document.getElementById("botao-enviar");
 const ok = document.getElementById("ok");
 
-//Evento ao clicar o botão enviar
+//Evento ao clicar o botão enviar formulário
 btn.addEventListener('click', (envent) => {
     event.preventDefault();
 
@@ -10,7 +10,7 @@ btn.addEventListener('click', (envent) => {
     mensagem = document.getElementById("mensagem").value;
     const alerta = document.getElementById("msg_alerta");
     let cont = 0;
-    //Verificação do e-mail
+    //Verificação do e-mail do formulário
     let user = email.substr(0, email.indexOf("@"));
     let domain = email.substr(email.indexOf("@") + 1);
     domain = domain.substr(0, domain.indexOf("."))
@@ -32,7 +32,7 @@ btn.addEventListener('click', (envent) => {
         ok.classList.remove("escondido")
         ok.classList.add("visivel");
     }
-    //Verificar se o usuário digitou alguma mensagem
+    //Verificar se o usuário digitou alguma mensagem na caixa de mensagem do formulário
     if(mensagem == false){
         alerta.innerHTML = "Erro no envio: insira uma mensagem";
         ok.classList.remove("escondido");
@@ -47,7 +47,7 @@ btn.addEventListener('click', (envent) => {
         ok.classList.add("visivel");
     }
 })
-//Botão de ok
+//Botão de ok ao aparecer a mensagem da validação do formulário
 ok.addEventListener('click', (evento) => {
     evento.preventDefault();
 
@@ -59,3 +59,4 @@ ok.addEventListener('click', (evento) => {
     document.getElementById("email").value = "";
 
 })
+
